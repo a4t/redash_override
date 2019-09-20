@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  server:
+    env_file:
+      - docker/env_files/server.env
+
+  postgres:
+    volumes:
+      - ./postgresql/data/:/var/lib/postgresql/data/
